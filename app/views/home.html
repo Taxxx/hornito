@@ -1,0 +1,34 @@
+{% extends 'riot.html' %} 
+{% block izquierda %}
+<div class="row">
+            
+	<div id="foco" class="col-md-4">
+		<center>
+		<br>
+		<img id="focos" src="/img/focooff.jpg" width="100px" height="100px" />
+		<p id='estadof' style="font-family: Montserrat">Apagado</p>
+		
+		</center>
+	</div>
+
+{% endblock %}
+
+{% block centro %}
+	<div id="alertas" class="col-md-4 scroll" >
+		<!-- textarea id="mensaje" name="mensaje" rows="10" cols="40"></textarea -->
+		<center><br><ul id="mensaje"></ul></center>
+	</div>
+
+{% endblock %}
+
+
+{% block derecha %}
+	<div id="ventilacion" class="col-md-4">
+		<center>
+			<br>
+			<img id="aspa" src="/img/ventioff.jpg" width="100px" height="100px"/>
+			<p id='estadoa' style="font-family: Montserrat">Encendido</p>
+		</center>
+	</div>
+</div>
+{% endblock %}

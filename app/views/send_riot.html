@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+{% endblock %}
+
+{% block content %}
+	<h2>Arduino</h2>
+	<div>
+		<form method="POST" action="/app/send_riot">
+			<input name="val"/>
+			<button>Enviar</button>
+		</form>
+	</div>
+
+	
+{% endblock %}
